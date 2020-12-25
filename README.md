@@ -1,1 +1,1 @@
-# shine-effects on image
+# shine-effect on image
