@@ -1,0 +1,40 @@
+body{
+    width:90%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    margin:0 auto;
+    background:#119980;
+    background:-webkit-linear-gradient(to right, #38ef7d, #119980);
+    background:linear-gradient(to right, #38ef7d, #119980);
+
+}
+.shine-box{
+    position:absolute;
+    height:200px;
+    width:200px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 20px rgba(0,0,0,0.22) ;
+    border-radius:50%;
+    overflow: hidden;
+
+}
+.shine-box img{
+    width:100%;
+    border-radius: 50%;
+}
+.shine-box:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-200px;
+    width:120px;
+    height:200px;
+    background:rgba(255,255,255,0.4);
+    transform:skew(-50deg);
+    transition:all 2s ease-in-out;
+    
+}
+.shine-box:hover:before{
+    left:300px;
+}
